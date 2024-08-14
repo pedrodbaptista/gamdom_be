@@ -6,7 +6,8 @@ In the project directory, you can run:
 
 ### `yarn docker:api`
 
-Run the installation of the docker compose to spin up the database and run the api in PORT 3000
+Run the installation of the docker compose to spin up the database and run the api in PORT 3000.
+Note: For this you need to have docker installed on your local machine.
 
 ### `yarn start`
 
