@@ -18,3 +18,10 @@ Runs the api in [http://localhost:3001](http://localhost:3001).
 
 Go to terminal and run:
 `yarn docker:api`
+
+After running completely, go to [https://github.com/pedrodbaptista/gamdom_fe](https://github.com/pedrodbaptista/gamdom_fe) and clone repo
+
+Run following commands
+`yarn install`
+and 
+`yarn start`
