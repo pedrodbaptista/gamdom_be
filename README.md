@@ -1,27 +1,20 @@
-# Getting Started with Gamdom task for sports events (backend)
+# Getting Started with Gamdom task for sports events
 
-## Available Scripts
 
-In the project directory, you can run:
+## Backend
+Go to [https://github.com/pedrodbaptista/gamdom_be](https://github.com/pedrodbaptista/gamdom_be) and clone repo
 
+Go to terminal and run:
 ### `yarn docker:api`
 
-Run the installation of the docker compose to spin up the database and run the api in PORT 3000.
-Note: For this you need to have docker installed on your local machine.
+## Frontend
+After running completely, go to [https://github.com/pedrodbaptista/gamdom_fe](https://github.com/pedrodbaptista/gamdom_fe) and clone repo
+
+Go to terminal and run:
+### `yarn install`
+
+and then
 
 ### `yarn start`
 
-Runs the api in [http://localhost:3001](http://localhost:3001).
-
-
-## How to run
-
-Go to terminal and run:
-`yarn docker:api`
-
-After running completely, go to [https://github.com/pedrodbaptista/gamdom_fe](https://github.com/pedrodbaptista/gamdom_fe) and clone repo
-
-Run following commands
-`yarn install`
-and 
-`yarn start`
+Note: To run this app you need to have yarn installed.
