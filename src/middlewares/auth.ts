@@ -4,6 +4,7 @@ import * as dotenv from 'dotenv';
 import {AppDataSource} from '../data-source';
 import User from '../models/User';
 dotenv.config();
+const {JWT_SECRET = "1234566789"} = process.env;
 
 export const authentication = (
   req: Request,
@@ -18,7 +19,7 @@ export const authentication = (
   if (!token) {
     return res.status(401).json({message: 'Unauthorized'});
   }
-  const decode = jwt.verify(token, process.env.JWT_SECRET);
+  const decode = jwt.verify(token, JWT_SECRET);
   if (!decode) {
     return res.status(401).json({message: 'Unauthorized'});
   }
