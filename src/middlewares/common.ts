@@ -1,8 +1,10 @@
 import express from 'express';
 import cors from 'cors';
+import {errorHandler} from './error';
 
-export const middleware = [
+export default [
   express.json(),
   express.urlencoded({extended: true}),
-  cors()
+  cors(),
+  errorHandler
 ];

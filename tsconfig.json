@@ -19,7 +19,8 @@
       "@services/*": ["./src/services/*"],
       "@utils/*": ["./src/utils/*"]
     },
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src/**/*"]
 }

@@ -1,5 +1,5 @@
 import {AppDataSource} from '../data-source';
-import {SportEvents} from '../models/SportsEvents';
+import SportEvents from '../models/SportsEvents';
 
 export const getSportsEvents = async (): Promise<SportEvents[]> => {
   try {

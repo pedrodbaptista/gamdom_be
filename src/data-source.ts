@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 import {DataSource} from 'typeorm';
-import {SportEvents} from './models/SportsEvents';
+import SportEvents from './models/SportsEvents';
+import User from './models/User';
 import dbConfig from './config/db';
 
 const connConfigs = dbConfig.dbConfig;
@@ -14,5 +15,5 @@ export const AppDataSource = new DataSource({
 
   synchronize: process.env.NODE_ENV === 'dev' ? false : false,
   logging: process.env.NODE_ENV === 'dev' ? false : false,
-  entities: [SportEvents]
+  entities: [SportEvents, User]
 });
