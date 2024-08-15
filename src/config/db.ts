@@ -7,7 +7,7 @@ export const DbConfig = z.object({
     .string({
       invalid_type_error: 'DB_HOST must be a string'
     })
-    .default('localhost'),
+    .default('postgres'),
   DB_PORT: z
     .string({invalid_type_error: 'DB_PORT must be a number'})
     .default('5432'),
