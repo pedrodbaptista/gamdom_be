@@ -22,18 +22,18 @@ services:
       - ./db_data/:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/create_tables.sql
 
-  # api:
-  #   <<: *defaults
-  #   depends_on:
-  #     - postgres
-  #   container_name: gamdom_api
-  #   build: 
-  #     dockerfile: ./Dockerfile
-  #     context: ./../
-  #   restart: unless-stopped
-  #   ports:
-  #     - 3000:3000
-  #   stdin_open: true
+  api:
+    <<: *defaults
+    depends_on:
+      - postgres
+    container_name: gamdom_api
+    build: 
+      dockerfile: ./Dockerfile
+      context: ./../
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    stdin_open: true
     
 volumes:
   db:
